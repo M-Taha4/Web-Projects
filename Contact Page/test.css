@@ -1,0 +1,125 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body
+{
+    min-height: 100vh;
+    background: url(bg3.jpg) no-repeat center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.contact-page
+{
+    width: 100%;
+    max-width: 1400px;
+    padding: 50px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+h2
+{
+    width: 100%;
+    margin-bottom: 80px;
+    text-transform: uppercase;
+    color: #FD7272;
+    font-size: 60px;
+}
+
+.contact-info, .contact-form
+{
+    flex: 1;
+}
+.item
+{
+    margin-bottom: 24px;
+    font-size: 16px;
+    color: #ffff;
+}
+.icon
+{
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background-color: #70a1ff;
+    text-align: center;
+    color: #f1f2f6;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+.contact-form
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.texttb
+{
+    width: calc(50% - 10px);
+    height: 50px;
+    padding: 12px;
+    background-color: #322;
+    border: none;
+    color: #ffff;
+    margin-bottom: 20px;
+}
+textarea
+{
+    width: 100%;
+    min-height: 200px;
+    max-height: 400px;
+    resize: vertical;
+    padding: 12px;
+    background-color: #322;
+    border: none;
+    color: #ffff;
+    margin-bottom: 20px;
+}
+.btn
+{
+    width: 120px;
+    height: 40px;
+    margin-left: auto;
+    background-color: #70a1ff;
+    border: none;
+    color: #ffff;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 2px solid #70a1ff;
+    transition: .3s linear;
+}
+.btn:hover
+{
+    background-color: transparent;
+    color: #70a1ff;
+}
+@media screen and (max-width: 900px)
+{
+    .contact-page
+    {
+        max-width: 800px;
+    }
+    h2
+    {
+        font-size: 40px;
+        margin-bottom: 40px;
+    }
+    .contact-info, .contact-form
+    {
+        flex: 100%;
+        margin-bottom: 30px;
+    }
+    .texttb
+    {
+        width: 100%;
+    }
+}
